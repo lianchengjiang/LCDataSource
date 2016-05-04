@@ -29,7 +29,7 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    LCResuableViewModel *item = [self itemAtIndexPath:indexPath];
+    LCReusableViewModel *item = [self itemAtIndexPath:indexPath];
     
     if (item == nil) {
         return nil;
@@ -52,7 +52,7 @@
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
 {
     if (editingStyle == UITableViewCellEditingStyleDelete && self.canEdit) {
-        LCResuableViewModel *item = [self itemAtIndexPath:indexPath];
+        LCReusableViewModel *item = [self itemAtIndexPath:indexPath];
         [self removeRowAtIndexPath:indexPath inTableView:tableView];
         
         if (self.removeRowBlock) {

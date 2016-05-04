@@ -14,9 +14,9 @@
 		751C5A131CD8992A003E2291 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 751C5A121CD8992A003E2291 /* Assets.xcassets */; };
 		751C5A161CD8992A003E2291 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 751C5A141CD8992A003E2291 /* LaunchScreen.storyboard */; };
 		751C5A201CD89994003E2291 /* LCBaseDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 751C5A1F1CD89994003E2291 /* LCBaseDataSource.m */; };
-		751C5A251CD89A6E003E2291 /* LCResuableViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 751C5A241CD89A6E003E2291 /* LCResuableViewModel.m */; };
 		751C5A291CD89C8D003E2291 /* NSArray+Safe.m in Sources */ = {isa = PBXBuildFile; fileRef = 751C5A281CD89C8D003E2291 /* NSArray+Safe.m */; };
 		751C5A2C1CD89D0F003E2291 /* LCUITableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 751C5A2B1CD89D0F003E2291 /* LCUITableViewDataSource.m */; };
+		75A7EF5A1CD9DD8F004299C5 /* LCReusableViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 75A7EF591CD9DD8F004299C5 /* LCReusableViewModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,12 +32,12 @@
 		751C5A171CD8992A003E2291 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		751C5A1E1CD89994003E2291 /* LCBaseDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCBaseDataSource.h; sourceTree = "<group>"; };
 		751C5A1F1CD89994003E2291 /* LCBaseDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCBaseDataSource.m; sourceTree = "<group>"; };
-		751C5A231CD89A6E003E2291 /* LCResuableViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCResuableViewModel.h; sourceTree = "<group>"; };
-		751C5A241CD89A6E003E2291 /* LCResuableViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCResuableViewModel.m; sourceTree = "<group>"; };
 		751C5A271CD89C8D003E2291 /* NSArray+Safe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Safe.h"; sourceTree = "<group>"; };
 		751C5A281CD89C8D003E2291 /* NSArray+Safe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Safe.m"; sourceTree = "<group>"; };
 		751C5A2A1CD89D0F003E2291 /* LCUITableViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCUITableViewDataSource.h; sourceTree = "<group>"; };
 		751C5A2B1CD89D0F003E2291 /* LCUITableViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCUITableViewDataSource.m; sourceTree = "<group>"; };
+		75A7EF581CD9DD8F004299C5 /* LCReusableViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCReusableViewModel.h; sourceTree = "<group>"; };
+		75A7EF591CD9DD8F004299C5 /* LCReusableViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCReusableViewModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,8 +117,8 @@
 		751C5A221CD899DD003E2291 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				751C5A231CD89A6E003E2291 /* LCResuableViewModel.h */,
-				751C5A241CD89A6E003E2291 /* LCResuableViewModel.m */,
+				75A7EF581CD9DD8F004299C5 /* LCReusableViewModel.h */,
+				75A7EF591CD9DD8F004299C5 /* LCReusableViewModel.m */,
 			);
 			name = ViewModel;
 			sourceTree = "<group>";
@@ -203,11 +203,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				751C5A0E1CD8992A003E2291 /* ViewController.m in Sources */,
-				751C5A251CD89A6E003E2291 /* LCResuableViewModel.m in Sources */,
 				751C5A0B1CD8992A003E2291 /* AppDelegate.m in Sources */,
 				751C5A201CD89994003E2291 /* LCBaseDataSource.m in Sources */,
 				751C5A081CD8992A003E2291 /* main.m in Sources */,
 				751C5A291CD89C8D003E2291 /* NSArray+Safe.m in Sources */,
+				75A7EF5A1CD9DD8F004299C5 /* LCReusableViewModel.m in Sources */,
 				751C5A2C1CD89D0F003E2291 /* LCUITableViewDataSource.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -357,6 +357,7 @@
 				751C5A1C1CD8992A003E2291 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

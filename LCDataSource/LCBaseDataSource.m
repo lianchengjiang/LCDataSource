@@ -84,9 +84,9 @@
     return YES;
 }
 
-- (__kindof LCResuableViewModel *)itemAtIndexPath:(NSIndexPath *)indexPath;
+- (__kindof LCReusableViewModel *)itemAtIndexPath:(NSIndexPath *)indexPath;
 {
-    LCResuableViewModel *item;
+    LCReusableViewModel *item;
     if (self.multipleSection) {
         NSArray *rowList = [self.modelList safe_objectAtIndex:indexPath.section];
         item = [rowList safe_objectAtIndex:indexPath.row];
@@ -97,7 +97,7 @@
     return item;
 }
 
-- (NSIndexPath *)indexPathOfModel:(LCResuableViewModel *)item
+- (NSIndexPath *)indexPathOfModel:(LCReusableViewModel *)item
 {
     if (!self.multipleSection) {
         NSUInteger row = [self.modelList indexOfObject:item];

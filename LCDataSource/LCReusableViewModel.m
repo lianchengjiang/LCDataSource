@@ -1,14 +1,14 @@
 //
-//  LCResuableViewModel.m
+//  LCReusableViewModel.m
 //  LCDataSourceExample
 //
-//  Created by jiangliancheng on 16/5/3.
+//  Created by jiangliancheng on 16/5/4.
 //  Copyright © 2016年 jiangliancheng. All rights reserved.
 //
 
-#import "LCResuableViewModel.h"
+#import "LCReusableViewModel.h"
 
-@implementation LCResuableViewModel
+@implementation LCReusableViewModel
 
 #pragma mark - getter
 - (NSString *)identifier

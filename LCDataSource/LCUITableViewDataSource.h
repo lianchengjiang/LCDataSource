@@ -10,7 +10,7 @@
 #import <UIKit/UIKit.h>
 #import "LCBaseDataSource.h"
 
-typedef void(^TableViewRemoveRowBlock)(__kindof LCResuableViewModel *viewModel);
+typedef void(^TableViewRemoveRowBlock)(__kindof LCReusableViewModel *viewModel);
 
 @interface LCUITableViewDataSource : LCBaseDataSource<UITableViewDataSource>
 
