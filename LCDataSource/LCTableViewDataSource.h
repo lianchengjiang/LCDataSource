@@ -1,5 +1,5 @@
 //
-//  LCUITableViewDataSource.h
+//  LCTableViewDataSource.h
 //  LCDataSourceExample
 //
 //  Created by jiangliancheng on 16/5/3.
@@ -12,7 +12,7 @@
 
 typedef void(^TableViewRemoveRowBlock)(__kindof LCReusableViewModel *viewModel);
 
-@interface LCUITableViewDataSource : LCBaseDataSource<UITableViewDataSource>
+@interface LCTableViewDataSource : LCBaseDataSource<UITableViewDataSource>
 
 - (void)openSlideRemoveFunctionWithBlock:(TableViewRemoveRowBlock)block;
 - (void)removeRowAtIndexPath:(NSIndexPath *)indexPath inTableView:(UITableView *)tableView;

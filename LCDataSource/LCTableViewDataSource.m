@@ -1,21 +1,21 @@
 //
-//  LCUITableViewDataSource.m
+//  LCTableViewDataSource.m
 //  LCDataSourceExample
 //
 //  Created by jiangliancheng on 16/5/3.
 //  Copyright © 2016年 jiangliancheng. All rights reserved.
 //
 
-#import "LCUITableViewDataSource.h"
+#import "LCTableViewDataSource.h"
 
-@interface LCUITableViewDataSource ()
+@interface LCTableViewDataSource ()
 
 @property (nonatomic, assign) BOOL canEdit;
 @property (nonatomic, copy) TableViewRemoveRowBlock removeRowBlock;
 
 @end
 
-@implementation LCUITableViewDataSource
+@implementation LCTableViewDataSource
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
