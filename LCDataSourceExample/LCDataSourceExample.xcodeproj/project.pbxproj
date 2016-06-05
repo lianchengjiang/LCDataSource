@@ -38,6 +38,7 @@
 		751C5A2B1CD89D0F003E2291 /* LCTableViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCTableViewDataSource.m; sourceTree = "<group>"; };
 		75A7EF581CD9DD8F004299C5 /* LCReusableViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCReusableViewModel.h; sourceTree = "<group>"; };
 		75A7EF591CD9DD8F004299C5 /* LCReusableViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCReusableViewModel.m; sourceTree = "<group>"; };
+		75EE09431D044D6A00573A30 /* LCDataSource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCDataSource.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +96,7 @@
 		751C5A1D1CD89942003E2291 /* LCDataSource */ = {
 			isa = PBXGroup;
 			children = (
+				75EE09431D044D6A00573A30 /* LCDataSource.h */,
 				751C5A261CD89BAC003E2291 /* Category */,
 				751C5A221CD899DD003E2291 /* ViewModel */,
 				751C5A211CD899CE003E2291 /* DataSource */,
