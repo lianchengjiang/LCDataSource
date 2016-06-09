@@ -10,6 +10,7 @@
 #define LCDataSource_h
 #import "LCReusableViewModel.h"
 #import "LCTableViewDataSource.h"
+#import "LCReusableViewProtocol.h"
 
 
 #endif /* LCDataSource_h */

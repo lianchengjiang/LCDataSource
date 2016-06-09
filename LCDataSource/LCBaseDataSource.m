@@ -8,6 +8,12 @@
 
 #import "LCBaseDataSource.h"
 #import "NSArray+Safe.h"
+#import "LCReusableViewProtocol.h"
+
+@interface LCBaseDataSource ()
+@property (nonatomic, copy) LCConfigureCellBlock configBlock;
+
+@end
 
 @implementation LCBaseDataSource
 
@@ -50,11 +56,21 @@
 }
 
 #pragma mark - public
-- (void)configReusableCellWith:(LCConfigureCellBlock)configBlock;
+- (void)setExtraConfigCellBlock:(LCConfigureCellBlock)configBlock;
 {
     _configBlock = configBlock;
 }
 
+- (void)configCell:(UIView <LCReusableViewProtocol>*)cell withModel:(LCReusableViewModel *)model;
+{
+    if ([cell respondsToSelector:@selector(updateUIWithCellModel:)]) {
+        [cell updateUIWithCellModel:model];
+    }
+    
+    if (self.configBlock) {
+        self.configBlock(cell,model);
+    }
+}
 
 #pragma mark -
 - (BOOL)removeItemAtIndexPath:(NSIndexPath *)indexPath;

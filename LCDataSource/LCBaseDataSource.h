@@ -19,11 +19,13 @@ typedef void (^LCConfigureCellBlock)(__kindof UIView *cell,__kindof LCReusableVi
 @property (nonatomic, assign, readonly) BOOL multipleSection;
 
 @property (nonatomic, copy) NSArray *modelList;  // item must be kind of LCArrowCellModel
-@property (nonatomic, copy, readonly) LCConfigureCellBlock configBlock;
 
-// for auto complete
-- (void)configReusableCellWith:(LCConfigureCellBlock)configBlock;
+// set config block
+- (void)setExtraConfigCellBlock:(LCConfigureCellBlock)configBlock;
 
+
+// invoke config block 
+- (void)configCell:(UIView *)cell withModel:(LCReusableViewModel *)model;
 
 - (NSUInteger)sectionNumber;
 - (NSUInteger)itemNumberInSection:(NSUInteger)section;

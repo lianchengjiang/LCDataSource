@@ -36,6 +36,7 @@
 		751C5A281CD89C8D003E2291 /* NSArray+Safe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Safe.m"; sourceTree = "<group>"; };
 		751C5A2A1CD89D0F003E2291 /* LCTableViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCTableViewDataSource.h; sourceTree = "<group>"; };
 		751C5A2B1CD89D0F003E2291 /* LCTableViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCTableViewDataSource.m; sourceTree = "<group>"; };
+		7526D7421D093A78004FCCA9 /* LCReusableViewProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCReusableViewProtocol.h; sourceTree = "<group>"; };
 		75A7EF581CD9DD8F004299C5 /* LCReusableViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCReusableViewModel.h; sourceTree = "<group>"; };
 		75A7EF591CD9DD8F004299C5 /* LCReusableViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCReusableViewModel.m; sourceTree = "<group>"; };
 		75EE09431D044D6A00573A30 /* LCDataSource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCDataSource.h; sourceTree = "<group>"; };
@@ -121,6 +122,7 @@
 			children = (
 				75A7EF581CD9DD8F004299C5 /* LCReusableViewModel.h */,
 				75A7EF591CD9DD8F004299C5 /* LCReusableViewModel.m */,
+				7526D7421D093A78004FCCA9 /* LCReusableViewProtocol.h */,
 			);
 			name = ViewModel;
 			sourceTree = "<group>";
