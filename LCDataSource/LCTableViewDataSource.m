@@ -37,9 +37,7 @@
     
     [tableView registerClass:item.viewClass forCellReuseIdentifier:item.identifier];
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:item.identifier];
-    if (self.configBlock) {
-        self.configBlock(cell, item);
-    }
+    [self configCell:cell withModel:item];
     
     return cell;
 }
